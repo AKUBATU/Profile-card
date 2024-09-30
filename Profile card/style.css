@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --primary-color: hsl(185, 75%, 39%);
+    --text-color:hsl(227, 10%, 46%);
+    --heading-color:hsl(229, 23%, 23%);
+    --border-color:hsl(0, 0%, 59%, 0.5);
+}
+
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    height: 100vh;
+    width: 100%;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Hide the scroll*/
+body::-webkit-scrollbar {
+    display:none;
+}
+
+/*Style the background top*/
+.bg-top {
+    position: absolute;
+    background: url(./source/bg-pattern-top.svg) no-repeat;
+    width: 978px;
+    height: 978px;
+    top:-70%;
+    right: 50%;
+}
+
+/*Style the background bottom*/
+.bg-bottom {
+    position: absolute;
+    background: url(./source/bg-pattern-bottom.svg) no-repeat;
+    width: 978px;
+    height: 978px;
+    top: 55%;
+    right: 47;
+}
+
+/*Style the card*/
+.card{
+    max-width: 400px;
+    background-color: #fff;
+    border-radius: 15px;
+    text-align:center;
+    position: relative;
+}
+
+/*Style the card image and avatar*/
+.card .image{
+    position:relative;
+}
+
+.card .image .bg-card {
+    border-radius: 15px 15px 0px 0px;
+    width: 100%;
+}
+
+.card .image .avatar {
+    max-width: 90px;
+    border-radius: 50%; 
+    outline: 5px solid #fff;
+    position: absolute;
+    left: 50%;
+    top: 100%;
+    transform: translate(-50%, -50%);
+}
+
+/*Style the title*/
+.card .title {
+    margin: 65px 0 30px;
+}
+
+.card .title h2 {
+    margin-bottom: 5px;
+}
+
+.card .title h2 span {
+    color: var(--text-color);
+    font-weight:400;
+}
+/*style the stats*/
+.card .stats {
+    display:flex;
+    justify-content:space-between;
+    align-items: center;
+    border-top: 2px solid var(--border-color);
+    padding: 30px 40px;
+}
+
+.h3 {
+    color: var(--heading-color);
+    font: weight 700;
+}
+
+/*Responsive*/
+@media (max-width:)
+
+
+
+
